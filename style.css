@@ -1,0 +1,43 @@
+/* Vexa studio site. Fredoka (SIL OFL) is self-hosted so the pages make no third-party requests. */
+@font-face{font-family:'Fredoka';font-style:normal;font-weight:500 700;font-display:swap;src:url(fonts/fredoka.woff2) format('woff2')}
+:root{--bg:#1e1b4b;--bg2:#3b2a7a;--card:rgba(255,255,255,.07);--line:rgba(255,255,255,.12);--text:#fff;--soft:rgba(255,255,255,.78);--gold:#ffd23f;--green:#5eea7a}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%}
+body{min-height:100vh;font:500 17px/1.6 'Fredoka',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;color:var(--text);background:linear-gradient(160deg,var(--bg),var(--bg2)) fixed;display:flex;flex-direction:column}
+a{color:var(--gold)}
+a:focus-visible,.btn:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+.wrap{width:100%;max-width:880px;margin:0 auto;padding:0 20px}
+header.site{padding:18px 0;border-bottom:1px solid var(--line)}
+header.site .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px}
+.brand{font-size:28px;font-weight:700;letter-spacing:1px;text-decoration:none;color:#fff}
+.brand span{background:linear-gradient(90deg,#ff6b9d,#ffd166,#06d6a0,#4cc9f0,#b388ff);-webkit-background-clip:text;background-clip:text;color:transparent}
+nav a{color:var(--soft);text-decoration:none;margin-left:18px;font-weight:600}
+nav a:hover{color:#fff}
+main{flex:1;padding:44px 0 56px}
+.hero h1{font-size:clamp(34px,7vw,56px);line-height:1.05;font-weight:700;text-shadow:0 5px 0 rgba(0,0,0,.3)}
+.hero p{font-size:20px;color:var(--soft);margin-top:14px;max-width:560px}
+h2.section{font-size:24px;margin:52px 0 16px}
+.game{display:grid;grid-template-columns:1fr;background:var(--card);border:2px solid var(--line);border-radius:26px;overflow:hidden;box-shadow:0 20px 60px rgba(0,0,0,.35)}
+.game img.banner{display:block;width:100%;height:auto}
+.game .body{padding:22px;display:flex;gap:18px;align-items:flex-start}
+.game img.icon{width:84px;height:84px;border-radius:20px;flex:none;box-shadow:0 6px 0 rgba(0,0,0,.3)}
+.game h3{font-size:24px;line-height:1.2}
+.game p{color:var(--soft);margin-top:6px}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.tag{font-size:14px;font-weight:600;padding:4px 12px;border-radius:999px;background:rgba(0,0,0,.3)}
+.tag.soon{background:var(--gold);color:#3a2000}
+.links{margin-top:14px;display:flex;flex-wrap:wrap;gap:16px;font-weight:600}
+.contact{background:var(--card);border:2px solid var(--line);border-radius:22px;padding:22px}
+.contact p{color:var(--soft)}
+footer.site{border-top:1px solid var(--line);padding:20px 0;color:var(--soft);font-size:15px}
+footer.site .wrap{display:flex;flex-wrap:wrap;gap:8px 20px;justify-content:space-between}
+/* Legal pages: dark text on a light sheet for long reading */
+.sheet{background:#fff;color:#1f1b3a;border-radius:22px;padding:28px 24px 36px;font-family:system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;font-weight:400;font-size:16px;box-shadow:0 20px 60px rgba(0,0,0,.35)}
+.sheet h1{font-size:28px;line-height:1.2;margin-bottom:4px}
+.sheet h2{font-size:19px;margin:28px 0 6px}
+.sheet p,.sheet li{margin:8px 0}
+.sheet ul{padding-left:22px}
+.sheet .meta{color:#5b5778;font-size:14px;margin-bottom:20px}
+.sheet a{color:#4338ca}
+.back{display:inline-block;margin-bottom:18px;font-weight:600}
+@media (max-width:520px){.game .body{flex-direction:column}nav a{margin-left:12px}}
